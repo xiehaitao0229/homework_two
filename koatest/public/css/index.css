@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.clear:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.po_re {
+    position: relative;
+}
+
+.main {
+    padding: 200px;
+}
+
+.laud {
+    width: 240px;
+    height: 120px;
+    margin: 0px auto;
+}
+
+.laud .hand_l {
+    width: 60px;
+    height: 60px;
+    background: #f1c3a9;
+    border-top: 1px solid #b06136;
+    margin-top: 32px;
+    margin-left: 100px;
+}
+/*手掌*/
+
+.laud .hand_r {
+    width: 88px;
+    height: 120px;
+    border: 1px solid #b06136;
+    border-radius: 10px;
+    margin-left: -10px;
+    background: #f1c3a9;
+    position: relative;
+}
+
+.laud .hand_r:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 60px;
+    left: -4px;
+    top: 32px;
+    background: #f1c3a9;
+    position: absolute;
+}
+/*手指*/
+
+.laud .hand_r span {
+    display: block;
+    width: 25px;
+    height: 30px;
+    border: 1px solid #b06136;
+    border-left: 0;
+    border-radius: 0px 20px 20px 0px;
+    background: #f1c3a9;
+    box-shadow: -4px 0px 4px #fff inset;
+}
+
+.laud .hand_r span.big {
+    width: 70px;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: -36px;
+    left: -2px;
+}
+
+.laud .hand_r .hand_finger {
+    position: absolute;
+    right: -15px;
+    top: -1px;
+}
+/*点赞数字*/
+
+.laud_num {
+    position: absolute;
+    left: 130px;
+    cursor: pointer;
+}
+
+.laud_num p {
+    font-size: 18px;
+    width: 108px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.laud_num span {
+    color: #f00;
+    display: none;
+    font-size: 18px;
+    width: 108px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.laud_num em {
+    color: #f00;
+    animation: mymove 2s infinite;
+    animation-iteration-count: 1;
+    position: absolute;
+    font-size: 30px;
+    opacity: 0;
+}
